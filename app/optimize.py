@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, T5Config
 
 if __name__ == "__main__":
     trained_model_path = "ramsrigouthamg/t5_squad_v1"
-    output_path = "model_weights"
+    output_path = "app/model_weights"
 
     onnx_model_paths = generate_onnx_representation(
         trained_model_path, output_path=output_path
